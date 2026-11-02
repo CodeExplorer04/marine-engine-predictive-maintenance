@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+**/venv/
+**/env/
+
+# Environment variables
+.env
+*.env
+!.env.example
+
+# ML generated model files (>100MB exceeds GitHub limits)
+*.pkl
+*.joblib
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+**/node_modules/
+dist/
+build/
+**/dist/
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test/cache
+.pytest_cache/
+.coverage
+
+# Secrets
+*.pem
+*.key

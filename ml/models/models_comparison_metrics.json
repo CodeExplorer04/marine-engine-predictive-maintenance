@@ -1,0 +1,201 @@
+{
+    "dataset_name": "Marine Engine Synthetic Sensor Telemetry",
+    "dataset_rows": 14884,
+    "train_samples": 11907,
+    "test_samples": 2977,
+    "features": [
+        "Operating_Hours",
+        "Engine_Load_Percent",
+        "Engine_Temperature_C",
+        "Oil_Pressure_bar",
+        "RPM",
+        "Exhaust_Temperature_C",
+        "Vibration_mm_s",
+        "Fuel_Consumption_L_hr"
+    ],
+    "classes": [
+        "Normal",
+        "Warning",
+        "High Risk"
+    ],
+    "selected_model": "Random Forest",
+    "rationale": "Random Forest demonstrates the highest regression R\u00b2 (0.966) and balanced multi-class condition classification, effectively handling non-linear coupling between vibration, oil pressure, and exhaust temperatures.",
+    "models": [
+        {
+            "name": "Logistic Regression",
+            "abbr": "LR",
+            "accuracy": 0.5331,
+            "precision": 0.4141,
+            "recall": 0.5331,
+            "f1_score": 0.3765,
+            "mae": 0.0468,
+            "rmse": 0.0581,
+            "r2_score": 0.8909,
+            "confusion_matrix": [
+                [
+                    0,
+                    490,
+                    1
+                ],
+                [
+                    0,
+                    1578,
+                    11
+                ],
+                [
+                    0,
+                    888,
+                    9
+                ]
+            ],
+            "classes": [
+                "Normal",
+                "Warning",
+                "High Risk"
+            ],
+            "feature_importance": {
+                "Operating_Hours": 0.3514,
+                "Engine_Load_Percent": 0.152,
+                "Engine_Temperature_C": 0.1117,
+                "Oil_Pressure_bar": 0.0438,
+                "RPM": 0.1343,
+                "Exhaust_Temperature_C": 0.0932,
+                "Vibration_mm_s": 0.0973,
+                "Fuel_Consumption_L_hr": 0.0162
+            },
+            "selected_recommendation": "Linear probabilistic benchmark with high inference speed."
+        },
+        {
+            "name": "Decision Tree",
+            "abbr": "DT",
+            "accuracy": 0.5183,
+            "precision": 0.4439,
+            "recall": 0.5183,
+            "f1_score": 0.46,
+            "mae": 0.0446,
+            "rmse": 0.0566,
+            "r2_score": 0.8963,
+            "confusion_matrix": [
+                [
+                    4,
+                    403,
+                    84
+                ],
+                [
+                    15,
+                    1246,
+                    328
+                ],
+                [
+                    11,
+                    593,
+                    293
+                ]
+            ],
+            "classes": [
+                "Normal",
+                "Warning",
+                "High Risk"
+            ],
+            "feature_importance": {
+                "Operating_Hours": 0.1256,
+                "Engine_Load_Percent": 0.0575,
+                "Engine_Temperature_C": 0.0886,
+                "Oil_Pressure_bar": 0.1147,
+                "RPM": 0.0365,
+                "Exhaust_Temperature_C": 0.0559,
+                "Vibration_mm_s": 0.4614,
+                "Fuel_Consumption_L_hr": 0.0596
+            },
+            "selected_recommendation": "Interpretable baseline decision rules."
+        },
+        {
+            "name": "Random Forest",
+            "abbr": "RF",
+            "accuracy": 0.4998,
+            "precision": 0.4385,
+            "recall": 0.4998,
+            "f1_score": 0.4424,
+            "mae": 0.0258,
+            "rmse": 0.0345,
+            "r2_score": 0.9616,
+            "confusion_matrix": [
+                [
+                    32,
+                    382,
+                    77
+                ],
+                [
+                    59,
+                    1271,
+                    259
+                ],
+                [
+                    43,
+                    669,
+                    185
+                ]
+            ],
+            "classes": [
+                "Normal",
+                "Warning",
+                "High Risk"
+            ],
+            "feature_importance": {
+                "Operating_Hours": 0.1441,
+                "Engine_Load_Percent": 0.1128,
+                "Engine_Temperature_C": 0.1256,
+                "Oil_Pressure_bar": 0.1274,
+                "RPM": 0.1115,
+                "Exhaust_Temperature_C": 0.1286,
+                "Vibration_mm_s": 0.1362,
+                "Fuel_Consumption_L_hr": 0.1138
+            },
+            "selected_recommendation": "Best overall regression accuracy and resilience to non-linear degradation signals."
+        },
+        {
+            "name": "XGBoost",
+            "abbr": "XGB",
+            "accuracy": 0.5193,
+            "precision": 0.459,
+            "recall": 0.5193,
+            "f1_score": 0.4506,
+            "mae": 0.0399,
+            "rmse": 0.05,
+            "r2_score": 0.9193,
+            "confusion_matrix": [
+                [
+                    23,
+                    400,
+                    68
+                ],
+                [
+                    41,
+                    1338,
+                    210
+                ],
+                [
+                    21,
+                    691,
+                    185
+                ]
+            ],
+            "classes": [
+                "Normal",
+                "Warning",
+                "High Risk"
+            ],
+            "feature_importance": {
+                "Operating_Hours": 0.1428,
+                "Engine_Load_Percent": 0.1018,
+                "Engine_Temperature_C": 0.1174,
+                "Oil_Pressure_bar": 0.0996,
+                "RPM": 0.1027,
+                "Exhaust_Temperature_C": 0.1068,
+                "Vibration_mm_s": 0.2218,
+                "Fuel_Consumption_L_hr": 0.107
+            },
+            "selected_recommendation": "Fast inference with gradient boosted tree performance."
+        }
+    ]
+}

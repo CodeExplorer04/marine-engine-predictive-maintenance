@@ -1,0 +1,18 @@
+{
+    "model": "Random Forest Regressor",
+    "target": "Failure_Probability",
+    "dataset_rows": 15000,
+    "features": [
+        "Operating_Hours",
+        "Engine_Load_Percent",
+        "Engine_Temperature_C",
+        "Oil_Pressure_bar",
+        "RPM",
+        "Exhaust_Temperature_C",
+        "Vibration_mm_s",
+        "Fuel_Consumption_L_hr"
+    ],
+    "mae": 0.022664922308555775,
+    "rmse": 0.03171378523023733,
+    "r2": 0.966543832590022
+}

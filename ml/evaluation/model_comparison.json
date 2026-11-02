@@ -1,0 +1,26 @@
+[
+    {
+        "Model":"Gradient Boosting",
+        "Accuracy":0.53,
+        "Precision":0.4786060341,
+        "Recall":0.53,
+        "F1 Score":0.4524217195,
+        "ROC-AUC":0.5887495084
+    },
+    {
+        "Model":"Random Forest",
+        "Accuracy":0.405,
+        "Precision":0.4222197847,
+        "Recall":0.405,
+        "F1 Score":0.4123441626,
+        "ROC-AUC":0.5193729181
+    },
+    {
+        "Model":"Decision Tree",
+        "Accuracy":0.4083333333,
+        "Precision":0.4112734508,
+        "Recall":0.4083333333,
+        "F1 Score":0.409770951,
+        "ROC-AUC":0.5080787177
+    }
+]
